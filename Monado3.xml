@@ -32,6 +32,38 @@
                             <field name="NUM">10</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="oled_cleardisplay" id="104">
+                            <next>
+                              <block type="oled_drawtext" id="105">
+                                <field name="TEXT">green</field>
+                                <next>
+                                  <block type="oled_drawnumber" id="106" inline="true">
+                                    <value name="NUMBER">
+                                      <block type="sensor_spectrometer" id="107">
+                                        <field name="LIGHT">GREEN</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="oled_setcursor" id="108" inline="true">
+                                        <value name="STARTX">
+                                          <block type="math_number" id="109">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                        <value name="STARTY">
+                                          <block type="math_number" id="110">
+                                            <field name="NUM">20</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
