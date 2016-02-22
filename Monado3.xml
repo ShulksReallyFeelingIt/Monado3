@@ -1,58 +1,58 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="30" x="15" y="17">
+  <block type="oled_cleardisplay" id="1" x="15" y="17">
     <next>
-      <block type="controls_whileUntil" id="7" inline="false">
+      <block type="controls_whileUntil" id="2" inline="false">
         <field name="MODE">UNTIL</field>
         <value name="NUMBER">
-          <block type="sensor_button" id="14">
+          <block type="sensor_button" id="3">
             <field name="OBJECT">DOWN</field>
           </block>
         </value>
         <statement name="DO">
-          <block type="oled_cleardisplay" id="39">
+          <block type="oled_cleardisplay" id="4">
             <next>
-              <block type="oled_drawtext" id="49">
+              <block type="oled_drawtext" id="5">
                 <field name="TEXT">blue</field>
                 <next>
-                  <block type="oled_drawnumber" id="58" inline="true">
+                  <block type="oled_drawnumber" id="6" inline="true">
                     <value name="NUMBER">
-                      <block type="sensor_spectrometer" id="65">
+                      <block type="sensor_spectrometer" id="7">
                         <field name="LIGHT">BLUE</field>
                       </block>
                     </value>
                     <next>
-                      <block type="oled_setcursor" id="74" inline="true">
+                      <block type="oled_setcursor" id="8" inline="true">
                         <value name="STARTX">
-                          <block type="math_number" id="81">
+                          <block type="math_number" id="9">
                             <field name="NUM">0</field>
                           </block>
                         </value>
                         <value name="STARTY">
-                          <block type="math_number" id="82">
+                          <block type="math_number" id="10">
                             <field name="NUM">10</field>
                           </block>
                         </value>
                         <next>
-                          <block type="oled_cleardisplay" id="104">
+                          <block type="oled_cleardisplay" id="11">
                             <next>
-                              <block type="oled_drawtext" id="105">
+                              <block type="oled_drawtext" id="12">
                                 <field name="TEXT">green</field>
                                 <next>
-                                  <block type="oled_drawnumber" id="106" inline="true">
+                                  <block type="oled_drawnumber" id="13" inline="true">
                                     <value name="NUMBER">
-                                      <block type="sensor_spectrometer" id="107">
+                                      <block type="sensor_spectrometer" id="14">
                                         <field name="LIGHT">GREEN</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="oled_setcursor" id="108" inline="true">
+                                      <block type="oled_setcursor" id="15" inline="true">
                                         <value name="STARTX">
-                                          <block type="math_number" id="109">
+                                          <block type="math_number" id="16">
                                             <field name="NUM">0</field>
                                           </block>
                                         </value>
                                         <value name="STARTY">
-                                          <block type="math_number" id="110">
+                                          <block type="math_number" id="17">
                                             <field name="NUM">20</field>
                                           </block>
                                         </value>
